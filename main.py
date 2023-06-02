@@ -30,4 +30,3 @@ for line in Lines:
             exec('if '+n7[0]+'=='+n7[1]+': '+handleCMD( n7[2] , n7[3] ,n7[4] ))
         elif len(n7) == 4:
             exec('if '+n7[0]+'=='+n7[1]+': '+handleCMD( n7[2] , n7[3] ))
-        exec('if '+n7[0]+'!='+n7[1]+': print("THE ARGUMENT IS WRONG")')
