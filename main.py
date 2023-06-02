@@ -1,6 +1,6 @@
 
 # open file
-file1 = open('kakascript.txt', 'r')
+file1 = open('kakascript.ks', 'r')
 Lines = file1.readlines()
 # find lines
 
