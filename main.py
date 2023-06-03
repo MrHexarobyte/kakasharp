@@ -1,14 +1,13 @@
 
 # open file
-file1 = open('kakascript.ks', 'r')
+file1 = open('testfile.kss', 'r')
 Lines = file1.readlines()
 # find lines
+
 
 def handleCMD(cmd,at1='0',at2='0'):
     if cmd == '#say':
         return 'print("'+at1+'")'
-    if cmd == '#laka':
-        return 'print("'+(at1+at2)+'")'
 
 
 for line in Lines:
@@ -30,3 +29,6 @@ for line in Lines:
             exec('if '+n7[0]+'=='+n7[1]+': '+handleCMD( n7[2] , n7[3] ,n7[4] ))
         elif len(n7) == 4:
             exec('if '+n7[0]+'=='+n7[1]+': '+handleCMD( n7[2] , n7[3] ))
+    if code.startswith('#'):
+        n8 = code.strip()
+        handleCMD(n8[0],n8[1],n8[2])
