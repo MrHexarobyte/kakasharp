@@ -1,0 +1,9 @@
+kaka is True.
+bababop is 'kakanigga'.
+(kaka is True #say lakaka)
+
+(bababop is 'kakanigga' #say itworks)
+
+
+this code basically declares a variable named baba in the first line
+in the second line it checks if kaka is True and if it is True it says 'lakaka'
